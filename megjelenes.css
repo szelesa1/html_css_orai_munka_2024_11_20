@@ -1,0 +1,45 @@
+header{
+    grid-area: he;
+}
+
+nav{
+    grid-area: na;
+}
+
+#baltartalom{
+    grid-area: ba;
+}
+
+#kozeptartalom{
+    grid-area: ko;
+}
+
+#jobbtartalom{
+    grid-area: jo;
+}
+
+footer{
+    grid-area: fo;
+}
+
+main{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    /*grid-template-rows: 1fr 1fr 1fr 1fr;*/
+    grid-template-areas:
+    'he he he'
+    'na na na'
+    'ba ko jo'
+    'fo fo fo'
+    ;
+}
+
+.arckep{
+    width: 150px;
+    height: auto;
+}
+
+.autok{
+    width: 100%;
+    height: auto;
+}
